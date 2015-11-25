@@ -1,1 +1,76 @@
-Hello World
+<!DOCTYPE html>
+<head>
+  <style>
+    @import url(http://weloveiconfonts.com/api/?family=brandico|typicons|zocial);
+    [class*="brandico-"]:before {
+      font-family: 'brandico', sans-serif;
+    }
+    [class*="typicons-"]:before {
+      font-family: 'Typicons', sans-serif;
+    }
+    [class*="zocial-"]:before {
+      font-family: 'zocial', sans-serif;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/zocial.css">
+  <link href="css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <link href="bower_components/iron-icons/iron-icons.html" rel="import">
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div id="main">
+    <div id="header" class="center-content clear-fix">
+      <ul id="topContacts" class="flex-box"></ul>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="workExperience" class="gray expandable">
+      <h2>Work Experience <iron-icon icon="expand-more" class='expand'></iron-icon></h2>
+    </div>
+    <div id="projects" class="expandable">
+      <h2>Projects <iron-icon icon="expand-more" class='expand'></iron-icon></h2>
+    </div>
+    <div id="education" class="gray expandable">
+      <h2>Education <iron-icon icon="expand-more" class='expand'></iron-icon></h2>
+    </div>
+  </div>
+  <div id="mapDiv">
+    <h2>Where I've Lived and Worked</h2>
+  </div>
+  <div id="lets-connect" class="dark-gray">
+    <h2 class="orange center-text">Let's Connect</h2>
+      <ul id="footerContacts" class="flex-box">
+      </ul>
+  </div>
+  <script src="js/resumeBuilder.js"></script>
+  <script type="text/javascript">
+
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Resume",
+  "homepage": "https://github.com/dooster/frontend-nanodegree-resume",
+  "authors": [
+    "Jeremy Bender"
+  ],
+  "description": "interactive resume",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.2.3",
+    "paper-toolbar": "PolymerElements/paper-toolbar#~1.1.1",
+    "paper-icon-button": "PolymerElements/paper-icon-button#~1.0.5"
+  }
+}
