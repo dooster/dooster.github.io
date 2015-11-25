@@ -179,6 +179,30 @@ span {
   background-color: #0e390e;
 }
 
+.icon-phone:before {
+    content: "\e900";
+}
+
+.icon-location:before {
+    content: "\e901";
+}
+
+.icon-mail3:before {
+    content: "\e902";
+}
+
+.icon-twitter:before {
+    content: "\e903";
+}
+
+.icon-github:before {
+    content: "\e904";
+}
+
+.icon-linkedin:before {
+    content: "\e905";
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
