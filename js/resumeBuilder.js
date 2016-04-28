@@ -54,7 +54,7 @@
 			'projects' : [{
 				'title': 'Neighborhood Map',
 				'dates': 'April 2016',
-				'description': 'I built a single page Knockout.js application. The application, through API calls to Google and FourSquare, displays the best maps in Astoria, New York. Users can also save their favorite locations to the brower local storage.',
+				'description': "I built a single page Knockout.js application. The application, through API calls to Google and FourSquare, displays the best restaurants on a Google map in Astoria, New York. Users can save their favorite locations to the brower's local storage.",
 				'url': 'http://dooster.github.io/Neighborhood-Map/'
 			},
 			{
