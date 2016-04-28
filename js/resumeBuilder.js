@@ -52,6 +52,12 @@
 
 		projects: {
 			'projects' : [{
+				'title': 'Neighborhood Map',
+				'dates': 'April 2016',
+				'description': 'I built a single page Knockout.js application. The application, through API calls to Google and FourSquare, displays the best maps in Astoria, New York. Users can also save their favorite locations to the brower local storage.',
+				'url': 'http://dooster.github.io/Neighborhood-Map/'
+			},
+			{
 				'title': 'Cat Clicker',
 				'dates': 'February 2016',
 				'description': 'I built a webpage with the help of Udacity with Knockout.js. The application allows a user to select a cat and click on it to increase its count score.',
